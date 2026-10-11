@@ -1,0 +1,15 @@
+# Player data (names and ages) - personal info, don't publish
+players.json
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+
+# Editor / OS files
+.vscode/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,47 @@
+Hangman Riddle Game
+
+A terminal word-guessing game written in Python. Instead of guessing a hidden word letter by letter, you read a riddle-style clue and try to guess the word. Every wrong guess reveals one more letter, so the word slowly appears.
+
+Features
+Player login: new players enter a name and age, and returning players get a "Welcome back" message
+Words grouped into categories (for example nature, object, concept)
+Each word in a category is asked once, in random order
+Wrong guesses reveal the next letter, with a limit of 6 tries per word
+Score shown at the end of each game
+Type quit at any time to stop and see your score
+Input validation, so typing letters where a number is expected doesn't crash the game
+How to run
+
+You need Python 3 installed. There are no external libraries.
+
+Download or clone this repository
+Open a terminal in the project folder
+Run:
+python hangman.py
+Project files
+File	Purpose
+hangman.py	The game
+word.json	The words, clues and categories
+players.json	Created automatically on first run, stores player names and ages (not uploaded to GitHub)
+Adding your own words
+
+Open word.json and add an entry in this format:
+
+json
+{
+  "word": "Echo",
+  "clue": "It cannot speak until spoken to, yet repeats what you say.",
+  "category": "phenomenon"
+}
+What I used and practiced
+Python functions, loops and conditions
+Reading and writing JSON files
+try/except for error handling
+Lists, dictionaries and sets
+Splitting a program into small, reusable functions
+Ideas for improvement
+Track each player's best score
+A web version using HTML, CSS and JavaScript
+Author
+
+Bhavesh
